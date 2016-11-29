@@ -11,9 +11,9 @@ public class Developer implements Employee
 
     /**
      *
-     * @param name
-     * @param salary
-     * @param telnr
+     * @param name the name of the developer
+     * @param salary the salary of the developer
+     * @param telnr the phone number of the developer
      */
     public Developer(String name, double salary, String telnr)
     {
@@ -24,7 +24,7 @@ public class Developer implements Employee
 
     /**
      *
-     * @return
+     * @return the name of the developer
      */
     public String getName()
     {
@@ -33,8 +33,8 @@ public class Developer implements Employee
 
     /**
      *
-     * @param i
-     * @return
+     * @param i not used, because the method is no supported
+     * @return nothing, because the method is no supported
      * @throws OperationNotSupportedException
      */
     public Employee getSubordinate(int i) throws OperationNotSupportedException
@@ -44,7 +44,7 @@ public class Developer implements Employee
 
     /**
      *
-     * @return
+     * @return nothing, because the method is nod supported
      * @throws OperationNotSupportedException
      */
     public int countSubordinates() throws OperationNotSupportedException
@@ -54,7 +54,7 @@ public class Developer implements Employee
 
     /**
      *
-     * @return
+     * @return the salary of the developer
      */
     public double getSalary()
     {
@@ -63,7 +63,7 @@ public class Developer implements Employee
 
     /**
      *
-     * @return
+     * @return the phone number of the developer
      */
     public String getTelNr()
     {
@@ -72,7 +72,7 @@ public class Developer implements Employee
 
     /**
      *
-     * @param employee
+     * @param employee not used, because the method is no supported
      * @throws OperationNotSupportedException
      */
     public void addEmployee(Employee employee) throws OperationNotSupportedException
@@ -82,7 +82,7 @@ public class Developer implements Employee
 
     /**
      *
-     * @param employee
+     * @param employee not used, because the method is no supported
      * @throws OperationNotSupportedException
      */
     public void removeEmployee(Employee employee) throws OperationNotSupportedException
@@ -91,10 +91,15 @@ public class Developer implements Employee
     }
 
     /**
-     *
+     *This method prints the data of the developer
      */
     public void print()
     {
-
+        System.out.println("#################");
+        System.out.println("Name = " + getName());
+        System.out.println("Salary = " + getSalary());
+        System.out.println("Phone Number = " + getTelNr());
+        System.out.println("#################");
+        System.out.println();
     }
 }

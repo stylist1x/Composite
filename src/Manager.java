@@ -14,9 +14,9 @@ public class Manager implements Employee
 
     /**
      *
-     * @param name
-     * @param salary
-     * @param telnr
+     * @param name name of the manager
+     * @param salary salary of the manager
+     * @param telnr phone number of the manager
      */
     public Manager(String name, double salary, String telnr)
     {
@@ -28,7 +28,7 @@ public class Manager implements Employee
 
     /**
      *
-     * @return
+     * @return the Name of the manager
      */
     public String getName()
     {
@@ -37,8 +37,8 @@ public class Manager implements Employee
 
     /**
      *
-     * @param index
-     * @return
+     * @param index the manager you want to get returned
+     * @return the manager you selected
      */
     public Employee getSubordinate(int index)
     {
@@ -47,7 +47,7 @@ public class Manager implements Employee
 
     /**
      *
-     * @return
+     * @return the number of the Subordinates
      */
     public int countSubordinates()
     {
@@ -56,7 +56,7 @@ public class Manager implements Employee
 
     /**
      *
-     * @return
+     * @return the Salary of the manager
      */
     public double getSalary()
     {
@@ -65,7 +65,7 @@ public class Manager implements Employee
 
     /**
      *
-     * @return
+     * @return the phone number of the manager
      */
     public String getTelNr()
     {
@@ -74,7 +74,7 @@ public class Manager implements Employee
 
     /**
      *
-     * @param employee
+     * @param employee the manager you want to add
      */
     public void addEmployee(Employee employee)
     {
@@ -83,7 +83,7 @@ public class Manager implements Employee
 
     /**
      *
-     * @param employee
+     * @param employee the manager you want to remove
      */
     public void removeEmployee(Employee employee)
     {
@@ -91,10 +91,22 @@ public class Manager implements Employee
     }
 
     /**
-     *
+     *This method prints the Data of the manager
      */
     public void print()
     {
+        System.out.println("#################");
+        System.out.println("Name = " + getName());
+        System.out.println("Salary = " + getSalary());
+        System.out.println("Phone Number = " + getTelNr());
+        System.out.println("#################");
+        System.out.println();
 
+        Iterator<Employee> iterator = employees.iterator();
+        while(iterator.hasNext())
+        {
+            Employee employee = iterator.next();
+            employee.print();
+        }
     }
 }
