@@ -1,8 +1,9 @@
-import java.util.ArrayList;
+import java.util.*;
 
 /**
  * Created by Benedikt on 29.11.2016.
  */
+
 public class Manager implements Employee
 {
 
@@ -11,6 +12,12 @@ public class Manager implements Employee
     private String telnr;
     private ArrayList<Employee> employees;
 
+    /**
+     *
+     * @param name
+     * @param salary
+     * @param telnr
+     */
     public Manager(String name, double salary, String telnr)
     {
         this.name = name;
@@ -19,44 +26,75 @@ public class Manager implements Employee
         employees = new ArrayList<>();
     }
 
+    /**
+     *
+     * @return
+     */
     public String getName()
     {
-
+        return this.name;
     }
 
-    public Employee getSubordinate(int i)
+    /**
+     *
+     * @param index
+     * @return
+     */
+    public Employee getSubordinate(int index)
     {
-
+        return employees.get(index);
     }
 
+    /**
+     *
+     * @return
+     */
     public int countSubordinates()
     {
-
+        return employees.size();
     }
 
+    /**
+     *
+     * @return
+     */
     public double getSalary()
     {
-
+        return this.salary;
     }
 
-    public int getTelNr()
+    /**
+     *
+     * @return
+     */
+    public String getTelNr()
     {
-
+        return this.telnr;
     }
 
+    /**
+     *
+     * @param employee
+     */
     public void addEmployee(Employee employee)
     {
-
+        employees.add(employee);
     }
 
+    /**
+     *
+     * @param employee
+     */
     public void removeEmployee(Employee employee)
     {
-
+        employees.remove(employee);
     }
 
+    /**
+     *
+     */
     public void print()
     {
 
     }
-
 }
