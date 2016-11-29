@@ -35,7 +35,7 @@ public class Developer implements Employee
      *
      * @param i not used, because the method is no supported
      * @return nothing, because the method is no supported
-     * @throws OperationNotSupportedException
+     * @throws OperationNotSupportedException Constructs a new instance of OperationNotSupportedException
      */
     public Employee getSubordinate(int i) throws OperationNotSupportedException
     {
@@ -45,7 +45,7 @@ public class Developer implements Employee
     /**
      *
      * @return nothing, because the method is nod supported
-     * @throws OperationNotSupportedException
+     * @throws OperationNotSupportedException Constructs a new instance of OperationNotSupportedException
      */
     public int countSubordinates() throws OperationNotSupportedException
     {
@@ -73,7 +73,7 @@ public class Developer implements Employee
     /**
      *
      * @param employee not used, because the method is no supported
-     * @throws OperationNotSupportedException
+     * @throws OperationNotSupportedException Constructs a new instance of OperationNotSupportedException
      */
     public void addEmployee(Employee employee) throws OperationNotSupportedException
     {
@@ -83,7 +83,7 @@ public class Developer implements Employee
     /**
      *
      * @param employee not used, because the method is no supported
-     * @throws OperationNotSupportedException
+     * @throws OperationNotSupportedException Constructs a new instance of OperationNotSupportedException
      */
     public void removeEmployee(Employee employee) throws OperationNotSupportedException
     {
